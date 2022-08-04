@@ -48,7 +48,7 @@ let remaingingLife = 9;
 const flipCard = () => {
   document.addEventListener("click", (event) => {
     const el = event.target.querySelector("img");
-    if(event.target.classList.contains('container') || event.target.classList.contains('cards')){
+    if(event.target.classList.contains('container') || event.target.classList.contains('cards') || event.target.classList.contains('body')){
       return;
     }
     arrTime.push(0);
